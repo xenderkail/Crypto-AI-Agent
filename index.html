@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwNTk4NTYwMTEyOTk2NjM3NDE2OSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2YwYzhmNGI5ZDI5ZWJlMjFfaW5kZXguaHRtbC00OSJ9LCJleHAiOjE3OTE4MDUyMzMsImlhdCI6MTc5MTgwMTYzMywiYWxnIjoiUlMyNTYifQ.Z5HOmDrgPcnT6__PMZtsXlnUOilOZcnTYlvhVQMMZ6Nrm2Kc5O3qaDD3fGxeHxf6kk2geWW0QtJhJHoNEjaSYcoYjAMhoyHe25cMkw837Dy81Jdt7YZydNR5Na3RVo-xEo-T1CayiWFCI-ffR6CZGwnFlPjpDrLQoEVbn-9vRrW7yP6ArrCWIGG-RXmrXTThckFCibyxsGi6tEBs0t5UmdfeS1BkraUMjJLeSRxRQm5Nanb0JBtzdDF6gPywrbLAacS2J_I_YglMAIl9BpbHbuXxWpIL_SuWk5k5WZUlMu6GLcNo3l3qmyVFKZLav900TJHlz6OQAV9OFmF5tkYJ4g","c_f0c8f4b9d29ebe21_index.html-49")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=w(a.ownerDocument.styleSheets);c=yield sa(c,b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic AI Crypto Trading Engine &amp; Workstation</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080B10',
+              card: '#111622',
+              border: '#1E2638',
+              accent: '#3B82F6',
+              buy: '#10B981',
+              sell: '#EF4444',
+              warning: '#F59E0B'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: #080B10; }
+    ::-webkit-scrollbar-thumb { background: #1E2638; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3B82F6; }
+    
+    .glass-panel {
+      background: rgba(17, 22, 34, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glow-buy { box-shadow: 0 0 20px rgba(16, 185, 129, 0.25); }
+    .glow-sell { box-shadow: 0 0 20px rgba(239, 68, 68, 0.25); }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.top-0{top:0px}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-8{height:2rem}.h-80{height:20rem}.h-full{height:100%}.max-h-\[90vh\]{max-height:90vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.375rem * var(--tw-space-x-reverse));margin-left:calc(0.375rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded{border-radius:0.25rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-blue-500\/20{border-color:rgb(59 130 246 / 0.2)}.border-blue-500\/30{border-color:rgb(59 130 246 / 0.3)}.border-blue-500\/50{border-color:rgb(59 130 246 / 0.5)}.border-brand-border{--tw-border-opacity:1;border-color:rgb(30 38 56 / var(--tw-border-opacity, 1))}.border-emerald-500\/20{border-color:rgb(16 185 129 / 0.2)}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-emerald-500\/40{border-color:rgb(16 185 129 / 0.4)}.border-emerald-500\/50{border-color:rgb(16 185 129 / 0.5)}.border-indigo-500\/40{border-color:rgb(99 102 241 / 0.4)}.border-rose-500\/20{border-color:rgb(244 63 94 / 0.2)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/60{border-color:rgb(51 65 85 / 0.6)}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-brand-accent{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.bg-brand-dark{--tw-bg-opacity:1;background-color:rgb(8 11 16 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-500\/10{background-color:rgb(245 158 11 / 0.1)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-blue-500\/10{background-color:rgb(59 130 246 / 0.1)}.bg-blue-500\/20{background-color:rgb(59 130 246 / 0.2)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-blue-600\/20{background-color:rgb(37 99 235 / 0.2)}.bg-brand-accent{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-brand-border{--tw-bg-opacity:1;background-color:rgb(30 38 56 / var(--tw-bg-opacity, 1))}.bg-brand-card\/90{background-color:rgb(17 22 34 / 0.9)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/10{background-color:rgb(16 185 129 / 0.1)}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-indigo-600\/20{background-color:rgb(79 70 229 / 0.2)}.bg-rose-500\/10{background-color:rgb(244 63 94 / 0.1)}.bg-rose-500\/30{background-color:rgb(244 63 94 / 0.3)}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-800\/60{background-color:rgb(30 41 59 / 0.6)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-600{--tw-gradient-to:rgb(79 70 229 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #4f46e5 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-slate-200{--tw-gradient-to:rgb(226 232 240 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #e2e8f0 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-cyan-500{--tw-gradient-to:#06b6d4 var(--tw-gradient-to-position)}.to-slate-400{--tw-gradient-to:#94a3b8 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-1\.5{padding:0.375rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.text-right{text-align:right}.font-sans{font-family:Inter, sans-serif}.font-mono{font-family:JetBrains Mono, monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-blue-500\/20{--tw-shadow-color:rgb(59 130 246 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-blue-500\/30{--tw-shadow-color:rgb(59 130 246 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-500\/20{--tw-shadow-color:rgb(16 185 129 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-rose-500\/20{--tw-shadow-color:rgb(244 63 94 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.selection\:bg-brand-accent *::selection{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-brand-accent::selection{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:border-amber-500\/40:hover{border-color:rgb(245 158 11 / 0.4)}.hover\:border-rose-500\/40:hover{border-color:rgb(244 63 94 / 0.4)}.hover\:bg-amber-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-500\/20:hover{background-color:rgb(245 158 11 / 0.2)}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-500\/20:hover{background-color:rgb(59 130 246 / 0.2)}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-600\/40:hover{background-color:rgb(79 70 229 / 0.4)}.hover\:bg-rose-500:hover{--tw-bg-opacity:1;background-color:rgb(244 63 94 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:h-96{height:24rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:inline{display:inline}.md\:w-auto{width:auto}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:justify-end{justify-content:flex-end}.md\:border-t-0{border-top-width:0px}.md\:pt-0{padding-top:0px}}@media (min-width: 1024px){.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:col-span-3{grid-column:span 3 / span 3}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+<body class="bg-brand-dark text-slate-100 font-sans min-h-screen flex flex-col antialiased selection:bg-brand-accent selection:text-white">
+
+  <!-- HEADER -->
+  <header class="border-b border-brand-border bg-brand-card/90 sticky top-0 z-40 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/20">
+          <i class="fa-solid fa-robot text-white text-lg"></i>
+        </div>
+        <div>
+          <h1 class="font-black text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+            Agentic AI Trading Engine
+          </h1>
+          <p class="text-[11px] text-slate-400 font-medium">Binance API &amp; Paper Trading Workstation</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <!-- Live Data Connection Source Indicator -->
+        <div id="badge-data-source" class="flex items-center space-x-1.5 px-2.5 py-1 rounded-full border bg-emerald-500/10 border-emerald-500/30 text-emerald-400 text-xs font-mono" title="Data Feed Status">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span id="label-data-source">Binance Live (Futures)</span>
+        </div>
+
+        <!-- Agent Mode Status Indicator -->
+        <div id="badge-agent-status" class="flex items-center space-x-2 px-3 py-1 rounded-full border bg-slate-800 border-slate-700 text-slate-400 text-xs font-mono"><span class="w-2 h-2 rounded-full bg-slate-500"></span><span>Agent: Manual Mode</span></div>
+
+        <!-- API Config Button -->
+        <button id="btn-open-api-modal" class="p-2 px-3 rounded-xl bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 text-amber-400 transition text-xs sm:text-sm font-semibold flex items-center space-x-1.5">
+          <i class="fa-solid fa-key"></i>
+          <span id="label-api-status">API &amp; Paper Trading</span>
+        </button>
+
+        <!-- GitHub Deploy Button -->
+        <button id="btn-deploy-modal" class="p-2 px-3 rounded-xl bg-indigo-600/20 border border-indigo-500/40 hover:bg-indigo-600/40 text-indigo-300 transition text-xs sm:text-sm font-semibold flex items-center space-x-1.5">
+          <i class="fa-brands fa-github"></i>
+          <span class="hidden md:inline">Host Free</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+    <!-- Top Asset Toolbar & Navigation -->
+    <div class="glass-panel rounded-2xl p-4 flex flex-wrap items-center justify-between gap-4 border border-brand-border">
+      <!-- Asset Selector & Custom Coin -->
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider mr-1">Pair:</span>
+        <div id="asset-selector" class="flex flex-wrap items-center gap-1.5">
+        <div class="relative group flex items-center">
+          <button class="asset-btn text-xs font-bold px-3 py-1.5 rounded-xl border border-brand-border transition bg-brand-accent text-white border-brand-accent shadow-md shadow-blue-500/20" data-symbol="BTCUSDT" data-label="BTC">
+            BTC
+          </button>
+          
+        </div>
+      
+        <div class="relative group flex items-center">
+          <button class="asset-btn text-xs font-bold px-3 py-1.5 rounded-xl border border-brand-border transition bg-brand-dark text-slate-300 hover:bg-slate-800" data-symbol="ETHUSDT" data-label="ETH">
+            ETH
+          </button>
+          
+        </div>
+      
+        <div class="relative group flex items-center">
+          <button class="asset-btn text-xs font-bold px-3 py-1.5 rounded-xl border border-brand-border transition bg-brand-dark text-slate-300 hover:bg-slate-800" data-symbol="SOLUSDT" data-label="SOL">
+            SOL
+          </button>
+          
+        </div>
+      
+        <div class="relative group flex items-center">
+          <button class="asset-btn text-xs font-bold px-3 py-1.5 rounded-xl border border-brand-border transition bg-brand-dark text-slate-300 hover:bg-slate-800" data-symbol="XRPUSDT" data-label="XRP">
+            XRP
+          </button>
+          
+        </div>
+      
+        <div class="relative group flex items-center">
+          <button class="asset-btn text-xs font-bold px-3 py-1.5 rounded-xl border border-brand-border transition bg-brand-dark text-slate-300 hover:bg-slate-800" data-symbol="DOGEUSDT" data-label="DOGE">
+            DOGE
+          </button>
+          
+        </div>
+      
+        <div class="relative group flex items-center">
+          <button class="asset-btn text-xs font-bold px-3 py-1.5 rounded-xl border border-brand-border transition bg-brand-dark text-slate-300 hover:bg-slate-800" data-symbol="SUIUSDT" data-label="SUI">
+            SUI
+          </button>
+          
+        </div>
+      
+        <div class="relative group flex items-center">
+          <button class="asset-btn text-xs font-bold px-3 py-1.5 rounded-xl border border-brand-border transition bg-brand-dark text-slate-300 hover:bg-slate-800" data-symbol="NEARUSDT" data-label="NEAR">
+            NEAR
+          </button>
+          
+        </div>
+      </div>
+        
+        <button id="btn-add-coin-modal" class="text-xs font-bold px-3 py-1.5 rounded-xl border border-dashed border-blue-500/50 bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 transition flex items-center space-x-1">
+          <i class="fa-solid fa-plus text-[10px]"></i>
+          <span>Add Pair</span>
+        </button>
+      </div>
+
+      <!-- Timeframe Buttons (includes 1m scalping) -->
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-1 bg-brand-dark p-1 rounded-xl border border-brand-border">
+          <button class="tf-btn text-xs font-semibold px-2.5 py-1 rounded-lg transition" data-tf="1m">1m</button>
+          <button class="tf-btn text-xs font-semibold px-2.5 py-1 rounded-lg transition" data-tf="5m">5m</button>
+          <button class="tf-btn text-xs font-semibold px-2.5 py-1 rounded-lg transition active bg-brand-accent text-white" data-tf="15m">15m</button>
+          <button class="tf-btn text-xs font-semibold px-2.5 py-1 rounded-lg transition" data-tf="1h">1h</button>
+          <button class="tf-btn text-xs font-semibold px-2.5 py-1 rounded-lg transition" data-tf="4h">4h</button>
+          <button class="tf-btn text-xs font-semibold px-2.5 py-1 rounded-lg transition" data-tf="1d">1d</button>
+        </div>
+
+        <button id="btn-manual-refresh" class="p-2 rounded-xl bg-brand-border hover:bg-slate-700 text-slate-300 transition text-xs flex items-center space-x-1" title="Refresh Live Data">
+          <i class="fa-solid fa-rotate"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Action Guidance Banner -->
+    <div id="banner-novice-advice" class="glass-panel rounded-2xl p-5 border border-brand-border flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div class="flex items-center space-x-4">
+        <div id="box-quality-score" class="w-16 h-16 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex flex-col items-center justify-center font-mono flex-shrink-0">
+          <span class="text-[10px] text-slate-400 font-bold uppercase">Quality</span>
+          <span id="score-quality-number" class="text-xl font-black text-blue-400">65/100</span>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Action Advice:</span>
+            <span id="badge-novice-action" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">WAIT &amp; WATCH</span>
+          </div>
+          <h3 id="text-novice-headline" class="font-bold text-base text-white mt-1">Market Consolidating — No High Conviction Trigger</h3>
+          <p id="text-novice-detail" class="text-xs text-slate-400 mt-0.5">Wait for clearer order book wall confirmation or RSI divergence trigger before opening a new position.</p>
+        </div>
+      </div>
+
+      <!-- Auto Agent Toggle Button -->
+      <div class="flex items-center space-x-3 border-t md:border-t-0 border-brand-border pt-3 md:pt-0 w-full md:w-auto justify-between md:justify-end">
+        <div class="text-right">
+          <span class="text-xs font-bold text-slate-300 block">Automated Execution</span>
+          <span class="text-[10px] text-slate-400">Executes Binance / Paper orders</span>
+        </div>
+        <button id="btn-toggle-agent" class="px-4 py-2.5 bg-slate-800 border border-slate-700 text-slate-400 font-bold text-xs rounded-xl hover:bg-slate-700 transition flex items-center space-x-2">
+          <i class="fa-solid fa-power-off"></i>
+          <span id="label-agent-btn">Enable Auto Agent</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Metrics Bar -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      
+      <!-- Current Price Card -->
+      <div class="glass-panel rounded-2xl p-5 relative overflow-hidden">
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Perpetual Futures Price</div>
+        <div id="metric-price" class="text-2xl sm:text-3xl font-black mt-2 text-white font-mono">$83,475.60</div>
+        <div id="metric-price-change" class="text-xs font-bold mt-1 flex items-center space-x-1 text-emerald-400"><i class="fa-solid fa-arrow-trend-up"></i> <span>+0.57% (24h)</span></div>
+      </div>
+
+      <!-- Divergence Signal Card -->
+      <div id="card-signal-status" class="glass-panel rounded-2xl p-5 relative overflow-hidden transition-all duration-300">
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex justify-between">
+          <span>Divergence &amp; Signal</span>
+          <span id="metric-signal-score" class="font-mono text-slate-400">Score: 0.03</span>
+        </div>
+        <div id="metric-signal-action" class="text-xl sm:text-2xl font-black mt-2 text-slate-300 tracking-tight">NEUTRAL / HOLD</div>
+        <div id="metric-divergence-badge" class="text-xs font-bold text-slate-500 mt-1">No Divergence Detected</div>
+      </div>
+
+      <!-- Live Account Balance / Paper Wallet Card -->
+      <div class="glass-panel rounded-2xl p-5 relative overflow-hidden">
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex justify-between">
+          <span id="label-wallet-heading">Paper Account Balance</span>
+          <i id="icon-wallet-type" class="fa-solid fa-flask text-emerald-400"></i>
+        </div>
+        <div id="metric-account-balance" class="text-2xl sm:text-3xl font-black mt-2 text-emerald-400 font-mono">$10,000.00 USDT</div>
+        <div id="metric-account-status" class="text-xs text-slate-400 mt-1">Simulated Paper Environment Active</div>
+      </div>
+
+      <!-- Deep Order Depth Pressure -->
+      <div class="glass-panel rounded-2xl p-5 relative overflow-hidden">
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex justify-between">
+          <span>Perpetual Depth Ratio</span>
+          <span id="metric-imbalance-pct" class="font-mono text-blue-400">75.8% Buy Depth</span>
+        </div>
+        <div class="w-full bg-rose-500/30 h-2.5 rounded-full mt-3 overflow-hidden flex">
+          <div id="imbalance-buy-bar" class="bg-emerald-500 h-full transition-all duration-500" style="width: 75.7768%;"></div>
+        </div>
+        <div class="flex justify-between text-[11px] font-mono mt-2 text-slate-400">
+          <span id="depth-bid-vol" class="text-emerald-400">Bids: $3.1M</span>
+          <span id="depth-ask-vol" class="text-rose-400">Asks: $1.0M</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Trade Execution & Position Planner Terminal -->
+    <div class="glass-panel rounded-2xl p-5 border border-brand-border">
+      <div class="flex flex-wrap items-center justify-between border-b border-brand-border pb-3 mb-4 gap-2">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 rounded-xl bg-blue-600/20 border border-blue-500/30 text-blue-400 flex items-center justify-center font-bold text-sm">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-sm text-slate-100">Trade Position Planner &amp; Execution Terminal</h3>
+            <p class="text-xs text-slate-400">Calculates optimal entry, take-profit, stop-loss with 5% risk cap &amp; 10x leverage guardrails</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <button id="btn-exec-buy" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs transition flex items-center space-x-1.5 shadow-md shadow-emerald-500/20">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Market BUY / LONG</span>
+          </button>
+          <button id="btn-exec-sell" class="px-4 py-2 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl text-xs transition flex items-center space-x-1.5 shadow-md shadow-rose-500/20">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Market SELL / SHORT</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <!-- Input Form -->
+        <div class="space-y-3 lg:col-span-1">
+          <div>
+            <label class="text-xs font-bold text-slate-300">Position Direction</label>
+            <div class="grid grid-cols-2 gap-2 mt-1">
+              <button id="btn-pos-long" class="py-2 rounded-xl border border-emerald-500/40 bg-emerald-500/20 text-emerald-400 font-bold text-xs transition">
+                <i class="fa-solid fa-arrow-trend-up mr-1"></i> LONG
+              </button>
+              <button id="btn-pos-short" class="py-2 rounded-xl border border-brand-border bg-brand-dark text-slate-400 font-bold text-xs hover:border-rose-500/40 transition">
+                <i class="fa-solid fa-arrow-trend-down mr-1"></i> SHORT
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <label class="text-xs font-bold text-slate-300">Entry Price ($)</label>
+            <input type="number" id="input-entry-price" placeholder="e.g. 84500" class="w-full bg-brand-dark border border-brand-border rounded-xl px-3.5 py-2 text-xs font-mono text-white focus:outline-none focus:border-blue-500 mt-1">
+          </div>
+
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="text-xs font-bold text-slate-300 flex justify-between">
+                <span>Leverage</span>
+                <span class="text-amber-400 font-mono text-[10px]">Max 10x</span>
+              </label>
+              <input type="number" id="input-leverage" value="10" min="1" max="10" class="w-full bg-brand-dark border border-brand-border rounded-xl px-3 py-2 text-xs font-mono text-white focus:outline-none focus:border-blue-500 mt-1">
+            </div>
+            <div>
+              <label class="text-xs font-bold text-slate-300 flex justify-between">
+                <span>Risk %</span>
+                <span class="text-amber-400 font-mono text-[10px]">Max 5%</span>
+              </label>
+              <input type="number" id="input-risk-pct" value="2.0" step="0.5" min="0.5" max="5.0" class="w-full bg-brand-dark border border-brand-border rounded-xl px-3 py-2 text-xs font-mono text-white focus:outline-none focus:border-blue-500 mt-1">
+            </div>
+          </div>
+
+          <button id="btn-calculate-targets" class="w-full py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs transition shadow-md shadow-blue-500/20 flex items-center justify-center space-x-1.5">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>Calculate Position Targets</span>
+          </button>
+        </div>
+
+        <!-- Target Suggestions Output Cards -->
+        <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <!-- Take Profit 1 -->
+          <div class="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Take Profit 1</span>
+              <div id="target-tp1" class="text-lg font-black font-mono text-white mt-1">$83,832</div>
+              <div id="target-tp1-pct" class="text-xs font-mono text-emerald-400 font-semibold mt-0.5">+0.46% (+4.6% ROE)</div>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-2">Placed before nearest sell wall</p>
+          </div>
+
+          <!-- Take Profit 2 -->
+          <div class="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Take Profit 2</span>
+              <div id="target-tp2" class="text-lg font-black font-mono text-white mt-1">$84,682</div>
+              <div id="target-tp2-pct" class="text-xs font-mono text-emerald-400 font-semibold mt-0.5">+1.48% (+14.8% ROE)</div>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-2">Based on major resistance wall</p>
+          </div>
+
+          <!-- Stop Loss -->
+          <div class="p-3.5 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-rose-400 uppercase tracking-wider">Suggested Stop Loss</span>
+              <div id="target-sl" class="text-lg font-black font-mono text-white mt-1">$82,834</div>
+              <div id="target-sl-pct" class="text-xs font-mono text-rose-400 font-semibold mt-0.5">-0.74% (-7.4% ROE)</div>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-2">Placed below key support level</p>
+          </div>
+
+          <!-- Recommended Position Sizing -->
+          <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/60 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">Rec. Position Size</span>
+              <div id="target-pos-size" class="text-base font-black font-mono text-amber-300 mt-1">0.0599 BTC</div>
+              <div id="target-pos-usd" class="text-xs font-mono font-bold mt-0.5 text-slate-300">($500.00 Margin @ 10x)</div>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-2">Enforces 5% allocation rule</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts & Liquidity Clusters Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Chart Column (Takes 2 Cols) -->
+      <div class="lg:col-span-2 glass-panel rounded-2xl p-5 flex flex-col justify-between">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <div>
+            <h2 id="chart-title" class="font-bold text-base text-slate-100">BTC/USDT Chart (15m)</h2>
+            <p class="text-xs text-slate-400">With EMA 20 (Orange) &amp; EMA 50 (Blue) overlay</p>
+          </div>
+          
+          <div class="flex items-center space-x-3 text-xs font-mono">
+            <div class="bg-brand-dark px-2.5 py-1 rounded-md border border-brand-border">
+              RSI (14): <span id="rsi-badge" class="font-bold text-amber-400">42.3</span>
+            </div>
+            <div class="bg-brand-dark px-2.5 py-1 rounded-md border border-brand-border">
+              MACD: <span id="macd-badge" class="font-bold text-blue-400">-103.27</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative w-full h-80 sm:h-96">
+          <canvas id="priceChart" width="748" height="384" style="display: block; box-sizing: border-box; height: 384px; width: 748px;"></canvas>
+        </div>
+      </div>
+
+      <!-- Right Column: Order Book Liquidity Clusters -->
+      <div class="space-y-6">
+        
+        <div class="glass-panel rounded-2xl p-5">
+          <div class="flex items-center justify-between mb-3 border-b border-brand-border pb-2">
+            <h3 class="font-bold text-sm text-slate-200 flex items-center space-x-2">
+              <i class="fa-solid fa-layer-group text-blue-400"></i>
+              <span>Perpetual Liquidity Walls ($M)</span>
+            </h3>
+            <span class="text-[10px] text-slate-400 font-mono">500 Depth Bucket</span>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Sell Resistance Order Clusters -->
+            <div>
+              <span class="text-[11px] font-bold text-rose-400 uppercase tracking-wider block mb-2">Resting Resistance Sell Orders</span>
+              <div id="container-sell-clusters" class="space-y-1.5 font-mono text-xs">
+        <div class="flex items-center justify-between p-1.5 rounded bg-rose-500/10 border border-rose-500/20">
+          <span class="text-white font-bold">$84,000</span>
+          <span class="text-rose-400 font-bold">$0.99M USD</span>
+        </div>
+      </div>
+            </div>
+
+            <!-- Current Price Marker -->
+            <div class="py-1 px-3 rounded-lg bg-slate-800 text-center font-mono font-bold text-xs text-white border border-slate-700">
+              Current Price: <span id="label-book-current-price">$83,475.6</span>
+            </div>
+
+            <!-- Buy Support Order Clusters -->
+            <div>
+              <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block mb-2">Resting Support Buy Orders</span>
+              <div id="container-buy-clusters" class="space-y-1.5 font-mono text-xs">
+        <div class="flex items-center justify-between p-1.5 rounded bg-emerald-500/10 border border-emerald-500/20">
+          <span class="text-white font-bold">$83,000</span>
+          <span class="text-emerald-400 font-bold">$3.11M USD</span>
+        </div>
+      </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- API & Paper Trading Configuration Modal -->
+  <div id="modal-api-setup" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="glass-panel max-w-lg w-full rounded-2xl p-6 border border-brand-border shadow-2xl relative">
+      <div class="flex justify-between items-center mb-4 border-b border-brand-border pb-3">
+        <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+          <i class="fa-solid fa-sliders text-amber-400"></i>
+          <span>API &amp; Execution Mode Settings</span>
+        </h3>
+        <button id="btn-close-api-modal" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+      </div>
+
+      <!-- Mode Selector -->
+      <div class="mb-4 p-3 rounded-xl bg-slate-900 border border-slate-800">
+        <label class="text-xs font-bold text-slate-300 block mb-2">Trading Mode Selection:</label>
+        <div class="grid grid-cols-2 gap-2">
+          <button id="btn-mode-sim" class="py-2 px-3 rounded-lg border text-xs font-bold transition flex items-center justify-center space-x-1 border-emerald-500/50 bg-emerald-500/20 text-emerald-400">
+            <i class="fa-solid fa-flask"></i>
+            <span>Paper Trading (Virtual API)</span>
+          </button>
+          <button id="btn-mode-real" class="py-2 px-3 rounded-lg border text-xs font-bold transition flex items-center justify-center space-x-1 border-slate-700 bg-slate-800 text-slate-400 hover:border-amber-500/40">
+            <i class="fa-solid fa-key"></i>
+            <span>Live Binance API</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Paper Trading Panel -->
+      <div id="panel-paper-settings" class="space-y-3">
+        <div class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300">
+          <i class="fa-solid fa-shield-halved mr-1"></i> Virtual Paper Trading allows multi-day automated validation with simulated $10,000 USDT capital without risking real funds.
+        </div>
+        <div>
+          <label class="text-xs font-bold text-slate-300">Virtual USDT Balance</label>
+          <div class="flex space-x-2 mt-1">
+            <input type="number" id="input-virtual-balance" value="10000" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-2 text-xs text-white font-mono">
+            <button id="btn-reset-virtual" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-xl whitespace-nowrap">Reset Balance</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Binance API Panel -->
+      <div id="panel-real-api" class="space-y-3 hidden">
+        <div>
+          <label class="text-xs font-bold text-slate-300">Binance API Key</label>
+          <input type="password" id="input-binance-key" placeholder="Paste your Binance API Key" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-2.5 text-xs text-white font-mono focus:outline-none focus:border-blue-500 mt-1">
+        </div>
+
+        <div>
+          <label class="text-xs font-bold text-slate-300">Binance API Secret</label>
+          <input type="password" id="input-binance-secret" placeholder="Paste your Binance API Secret" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-2.5 text-xs text-white font-mono focus:outline-none focus:border-blue-500 mt-1">
+        </div>
+      </div>
+
+      <div id="api-modal-msg" class="text-xs font-bold mt-3 hidden"></div>
+
+      <div class="flex justify-between items-center mt-6">
+        <button id="btn-clear-api" class="text-xs font-semibold text-rose-400 hover:underline">Clear Saved Data</button>
+        <div class="flex space-x-2">
+          <button id="btn-cancel-api" class="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700">Cancel</button>
+          <button id="btn-save-api" class="px-4 py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-400 text-black flex items-center space-x-1">
+            <i class="fa-solid fa-check"></i>
+            <span>Apply Settings</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GitHub Pages Deploy Modal -->
+  <div id="modal-deploy" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-panel max-w-2xl w-full rounded-2xl p-6 border border-brand-border shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-center mb-4 border-b border-brand-border pb-3">
+        <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+          <i class="fa-brands fa-github text-indigo-400 text-xl"></i>
+          <span>Deploy Free on GitHub Pages</span>
+        </h3>
+        <button id="btn-close-deploy" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+        <div class="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-between">
+          <div>
+            <h4 class="font-bold text-white mb-1">Step 1: Export App File</h4>
+            <p class="text-slate-400 text-xs">Download this entire web application as a single self-contained file.</p>
+          </div>
+          <button id="btn-export-html" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs flex items-center space-x-1.5 shadow-md shadow-blue-500/30 whitespace-nowrap ml-2">
+            <i class="fa-solid fa-download"></i>
+            <span>Export index.html</span>
+          </button>
+        </div>
+
+        <h4 class="font-bold text-white text-sm pt-2">Step 2: Hosting Instructions on GitHub Pages:</h4>
+        <ol class="list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-300">
+          <li>Sign in to <a href="https://github.com" target="_blank" class="text-blue-400 underline font-semibold">GitHub.com</a>.</li>
+          <li>Click <strong>New Repository</strong> (e.g. <code>crypto-ai-agent</code>). Set visibility to <strong>Public</strong>.</li>
+          <li>Click <strong>Upload an existing file</strong> and select your exported <code>index.html</code>.</li>
+          <li>Go to <strong>Settings</strong> → <strong>Pages</strong>, select the <code>main</code> branch, and click <strong>Save</strong>.</li>
+          <li>Your app will be live in 1-2 minutes!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Custom Coin Modal -->
+  <div id="modal-add-coin" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="glass-panel max-w-md w-full rounded-2xl p-6 border border-brand-border shadow-2xl relative">
+      <div class="flex justify-between items-center mb-4 border-b border-brand-border pb-3">
+        <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+          <i class="fa-solid fa-coins text-amber-400"></i>
+          <span>Add Custom Pair</span>
+        </h3>
+        <button id="btn-close-add-coin" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="space-y-3">
+        <div>
+          <label class="text-xs font-bold text-slate-300">Coin Symbol</label>
+          <input type="text" id="input-coin-symbol" placeholder="e.g. ADA or ADAUSDT" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500 mt-1 uppercase font-mono">
+        </div>
+        <div id="add-coin-error" class="text-xs text-rose-400 hidden font-bold"></div>
+      </div>
+
+      <div class="flex justify-end space-x-2 mt-6">
+        <button id="btn-cancel-add-coin" class="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300">Cancel</button>
+        <button id="btn-submit-add-coin" class="px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-500">
+          <span>Add Pair</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Notification Dialog / Toast Modal -->
+  <div id="modal-dialog-toast" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="glass-panel max-w-sm w-full rounded-2xl p-6 border border-brand-border shadow-2xl text-center">
+      <div id="toast-icon-box" class="w-12 h-12 rounded-full mx-auto flex items-center justify-center mb-3 text-xl bg-blue-500/20 text-blue-400 border border-blue-500/30">
+        <i id="toast-icon" class="fa-solid fa-info"></i>
+      </div>
+      <h3 id="toast-title" class="text-base font-bold text-white mb-1">Notification</h3>
+      <p id="toast-message" class="text-xs text-slate-300 mb-5">Message text goes here...</p>
+      
+      <div id="toast-actions" class="flex justify-center space-x-2">
+        <button id="btn-toast-ok" class="px-5 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-500 text-white transition">OK</button>
+        <button id="btn-toast-cancel" class="px-5 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition hidden">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const DEFAULT_ASSETS = [
+      { symbol: 'BTCUSDT', label: 'BTC', isCustom: false, basePrice: 84200 },
+      { symbol: 'ETHUSDT', label: 'ETH', isCustom: false, basePrice: 3120 },
+      { symbol: 'SOLUSDT', label: 'SOL', isCustom: false, basePrice: 188 },
+      { symbol: 'XRPUSDT', label: 'XRP', isCustom: false, basePrice: 1.15 },
+      { symbol: 'DOGEUSDT', label: 'DOGE', isCustom: false, basePrice: 0.38 },
+      { symbol: 'SUIUSDT', label: 'SUI', isCustom: false, basePrice: 3.25 },
+      { symbol: 'NEARUSDT', label: 'NEAR', isCustom: false, basePrice: 6.40 }
+    ];
+
+    let assetsList = JSON.parse(localStorage.getItem('AGENTIC_ASSETS')) || DEFAULT_ASSETS;
+    let currentAsset = assetsList[0].label;
+    let currentSymbol = assetsList[0].symbol;
+    let currentTimeframe = '15m';
+
+    let useSimulatedTrading = localStorage.getItem('USE_SIMULATED_TRADING') !== 'false'; // default true
+    let virtualBalance = parseFloat(localStorage.getItem('VIRTUAL_BALANCE')) || 10000.00;
+    let binanceApiKey = localStorage.getItem('BINANCE_API_KEY') || '';
+    let binanceApiSecret = localStorage.getItem('BINANCE_API_SECRET') || '';
+    let isAgentAutoTrading = localStorage.getItem('AGENT_AUTO_ENABLED') === 'true';
+
+    let userPosition = { type: 'LONG', entryPrice: 0, leverage: 10, riskPct: 2.0 };
+    let liveDataSource = 'Binance Live'; // 'Binance Live' or 'Simulated Feed (Fallback)'
+
+    let marketData = {
+      price: 0,
+      priceChange24h: 0,
+      rsi: 50,
+      macd: 0,
+      macdSignal: 0,
+      atr: 0,
+      divergence: 'NONE',
+      signal: 'NEUTRAL',
+      score: 0,
+      qualityScore: 50,
+      bullProb: 50,
+      bearProb: 50,
+      imbalance: 50,
+      bidVolM: 0,
+      askVolM: 0,
+      buyClusters: [],
+      sellClusters: []
+    };
+
+    let chartInstance = null;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderAssetButtons();
+      initChart();
+      bindEvents();
+      updateApiStatusUI();
+      fetchLiveData();
+
+      setInterval(fetchLiveData, 8000);
+    });
+
+    function saveAssetsToStorage() {
+      localStorage.setItem('AGENTIC_ASSETS', JSON.stringify(assetsList));
+    }
+
+    function renderAssetButtons() {
+      const container = document.getElementById('asset-selector');
+      container.innerHTML = assetsList.map(item => `
+        <div class="relative group flex items-center">
+          <button 
+            class="asset-btn text-xs font-bold px-3 py-1.5 rounded-xl border border-brand-border transition ${item.label === currentAsset ? 'bg-brand-accent text-white border-brand-accent shadow-md shadow-blue-500/20' : 'bg-brand-dark text-slate-300 hover:bg-slate-800'}" 
+            data-symbol="${item.symbol}"
+            data-label="${item.label}">
+            ${item.label}
+          </button>
+          ${item.isCustom ? `
+            <button 
+              class="btn-remove-coin hidden group-hover:flex items-center justify-center w-4 h-4 bg-rose-500 text-white rounded-full text-[9px] -ml-2 -mt-2 z-10 shadow" 
+              data-symbol="${item.symbol}">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          ` : ''}
+        </div>
+      `).join('');
+
+      document.querySelectorAll('.asset-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          currentAsset = e.currentTarget.dataset.label;
+          currentSymbol = e.currentTarget.dataset.symbol;
+          renderAssetButtons();
+          fetchLiveData();
+        });
+      });
+
+      document.querySelectorAll('.btn-remove-coin').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const symbolToRemove = e.currentTarget.dataset.symbol;
+          assetsList = assetsList.filter(a => a.symbol !== symbolToRemove);
+          saveAssetsToStorage();
+          if (currentSymbol === symbolToRemove) {
+            currentAsset = assetsList[0].label;
+            currentSymbol = assetsList[0].symbol;
+          }
+          renderAssetButtons();
+          fetchLiveData();
+        });
+      });
+    }
+
+    function bindEvents() {
+      document.querySelectorAll('.tf-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          document.querySelectorAll('.tf-btn').forEach(b => b.classList.remove('active', 'bg-brand-accent', 'text-white'));
+          e.currentTarget.classList.add('active', 'bg-brand-accent', 'text-white');
+          currentTimeframe = e.currentTarget.dataset.tf;
+          fetchLiveData();
+        });
+      });
+
+      document.getElementById('btn-manual-refresh').addEventListener('click', fetchLiveData);
+
+      document.getElementById('btn-pos-long').addEventListener('click', () => {
+        userPosition.type = 'LONG';
+        document.getElementById('btn-pos-long').className = 'py-2 rounded-xl border border-emerald-500/40 bg-emerald-500/20 text-emerald-400 font-bold text-xs transition';
+        document.getElementById('btn-pos-short').className = 'py-2 rounded-xl border border-brand-border bg-brand-dark text-slate-400 font-bold text-xs hover:border-rose-500/40 transition';
+        calculatePositionTargets();
+      });
+
+      document.getElementById('btn-pos-short').addEventListener('click', () => {
+        userPosition.type = 'SHORT';
+        document.getElementById('btn-pos-short').className = 'py-2 rounded-xl border border-rose-500/40 bg-rose-500/20 text-rose-400 font-bold text-xs transition';
+        document.getElementById('btn-pos-long').className = 'py-2 rounded-xl border border-brand-border bg-brand-dark text-slate-400 font-bold text-xs hover:border-emerald-500/40 transition';
+        calculatePositionTargets();
+      });
+
+      document.getElementById('btn-calculate-targets').addEventListener('click', calculatePositionTargets);
+
+      // Auto Agent Toggle
+      document.getElementById('btn-toggle-agent').addEventListener('click', () => {
+        isAgentAutoTrading = !isAgentAutoTrading;
+        localStorage.setItem('AGENT_AUTO_ENABLED', isAgentAutoTrading);
+        updateAgentUI();
+      });
+
+      // API / Settings Modal Controls
+      document.getElementById('btn-open-api-modal').addEventListener('click', () => {
+        document.getElementById('modal-api-setup').classList.remove('hidden');
+      });
+      document.getElementById('btn-close-api-modal').addEventListener('click', () => {
+        document.getElementById('modal-api-setup').classList.add('hidden');
+      });
+      document.getElementById('btn-cancel-api').addEventListener('click', () => {
+        document.getElementById('modal-api-setup').classList.add('hidden');
+      });
+      document.getElementById('btn-save-api').addEventListener('click', saveApiSettings);
+      document.getElementById('btn-clear-api').addEventListener('click', clearApiSettings);
+
+      document.getElementById('btn-mode-sim').addEventListener('click', () => setTradingModeUI(true));
+      document.getElementById('btn-mode-real').addEventListener('click', () => setTradingModeUI(false));
+      document.getElementById('btn-reset-virtual').addEventListener('click', () => {
+        virtualBalance = 10000.00;
+        localStorage.setItem('VIRTUAL_BALANCE', '10000.00');
+        updateApiStatusUI();
+        showToast("Virtual Balance Reset", "Paper wallet restored to $10,000.00 USDT.", "info");
+      });
+
+      // Orders
+      document.getElementById('btn-exec-buy').addEventListener('click', () => confirmAndExecuteOrder('BUY'));
+      document.getElementById('btn-exec-sell').addEventListener('click', () => confirmAndExecuteOrder('SELL'));
+
+      // Deploy & Export
+      document.getElementById('btn-deploy-modal').addEventListener('click', () => document.getElementById('modal-deploy').classList.remove('hidden'));
+      document.getElementById('btn-close-deploy').addEventListener('click', () => document.getElementById('modal-deploy').classList.add('hidden'));
+      document.getElementById('btn-export-html').addEventListener('click', exportAppHTML);
+
+      // Custom Coin Modal
+      document.getElementById('btn-add-coin-modal').addEventListener('click', () => document.getElementById('modal-add-coin').classList.remove('hidden'));
+      document.getElementById('btn-close-add-coin').addEventListener('click', () => document.getElementById('modal-add-coin').classList.add('hidden'));
+      document.getElementById('btn-cancel-add-coin').addEventListener('click', () => document.getElementById('modal-add-coin').classList.add('hidden'));
+      document.getElementById('btn-submit-add-coin').addEventListener('click', handleAddCustomCoin);
+    }
+
+    function setTradingModeUI(isSim) {
+      useSimulatedTrading = isSim;
+      localStorage.setItem('USE_SIMULATED_TRADING', isSim);
+
+      const simBtn = document.getElementById('btn-mode-sim');
+      const realBtn = document.getElementById('btn-mode-real');
+      const simPanel = document.getElementById('panel-paper-settings');
+      const realPanel = document.getElementById('panel-real-api');
+
+      if (isSim) {
+        simBtn.className = 'py-2 px-3 rounded-lg border text-xs font-bold transition flex items-center justify-center space-x-1 border-emerald-500/50 bg-emerald-500/20 text-emerald-400';
+        realBtn.className = 'py-2 px-3 rounded-lg border text-xs font-bold transition flex items-center justify-center space-x-1 border-slate-700 bg-slate-800 text-slate-400 hover:border-amber-500/40';
+        simPanel.classList.remove('hidden');
+        realPanel.classList.add('hidden');
+      } else {
+        realBtn.className = 'py-2 px-3 rounded-lg border text-xs font-bold transition flex items-center justify-center space-x-1 border-amber-500/50 bg-amber-500/20 text-amber-400';
+        simBtn.className = 'py-2 px-3 rounded-lg border text-xs font-bold transition flex items-center justify-center space-x-1 border-slate-700 bg-slate-800 text-slate-400 hover:border-emerald-500/40';
+        realPanel.classList.remove('hidden');
+        simPanel.classList.add('hidden');
+      }
+    }
+
+    function updateAgentUI() {
+      const statusBadge = document.getElementById('badge-agent-status');
+      const btn = document.getElementById('btn-toggle-agent');
+      const label = document.getElementById('label-agent-btn');
+
+      if (isAgentAutoTrading) {
+        statusBadge.className = 'flex items-center space-x-2 px-3 py-1 rounded-full border bg-emerald-500/10 border-emerald-500/30 text-emerald-400 text-xs font-mono animate-pulse';
+        statusBadge.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Agent: AUTOMATED ACTIVE</span>';
+        btn.className = 'px-4 py-2.5 bg-emerald-600 text-white font-bold text-xs rounded-xl hover:bg-emerald-500 transition flex items-center space-x-2 shadow-lg shadow-emerald-500/20';
+        label.innerText = 'Agent Active (Click to Pause)';
+      } else {
+        statusBadge.className = 'flex items-center space-x-2 px-3 py-1 rounded-full border bg-slate-800 border-slate-700 text-slate-400 text-xs font-mono';
+        statusBadge.innerHTML = '<span class="w-2 h-2 rounded-full bg-slate-500"></span><span>Agent: Manual Mode</span>';
+        btn.className = 'px-4 py-2.5 bg-slate-800 border border-slate-700 text-slate-400 font-bold text-xs rounded-xl hover:bg-slate-700 transition flex items-center space-x-2';
+        label.innerText = 'Enable Auto Agent';
+      }
+    }
+
+    function updateApiStatusUI() {
+      const heading = document.getElementById('label-wallet-heading');
+      const icon = document.getElementById('icon-wallet-type');
+      const balDisplay = document.getElementById('metric-account-balance');
+      const statusDisplay = document.getElementById('metric-account-status');
+
+      if (useSimulatedTrading) {
+        heading.innerText = 'Paper Account Balance';
+        icon.className = 'fa-solid fa-flask text-emerald-400';
+        balDisplay.innerText = `$${virtualBalance.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} USDT`;
+        balDisplay.className = 'text-2xl sm:text-3xl font-black mt-2 text-emerald-400 font-mono';
+        statusDisplay.innerText = 'Simulated Paper Environment Active';
+      } else {
+        heading.innerText = 'Binance Futures Balance';
+        icon.className = 'fa-solid fa-wallet text-amber-400';
+        balDisplay.className = 'text-2xl sm:text-3xl font-black mt-2 text-amber-400 font-mono';
+        if (binanceApiKey && binanceApiSecret) {
+          fetchAccountBalance();
+        } else {
+          balDisplay.innerText = '$0.00 USDT';
+          statusDisplay.innerText = 'API Key Not Connected';
+        }
+      }
+      setTradingModeUI(useSimulatedTrading);
+      updateAgentUI();
+    }
+
+    // Fetch live market data with graceful fallbacks to handle CORS / sandbox limitations
+    async function fetchLiveData() {
+      let klines = null;
+      let depth = null;
+
+      // Strategy 1: Attempt Binance Futures REST API
+      try {
+        const [kRes, dRes] = await Promise.all([
+          fetch(`https://fapi.binance.com/fapi/v1/klines?symbol=${currentSymbol}&interval=${currentTimeframe}&limit=100`),
+          fetch(`https://fapi.binance.com/fapi/v1/depth?symbol=${currentSymbol}&limit=100`)
+        ]);
+
+        if (kRes.ok && dRes.ok) {
+          klines = await kRes.json();
+          depth = await dRes.json();
+          liveDataSource = 'Binance Live (Futures)';
+        }
+      } catch (err) {
+        // Fallback catch
+      }
+
+      // Strategy 2: Attempt Binance Spot REST API
+      if (!klines) {
+        try {
+          const [kRes2, dRes2] = await Promise.all([
+            fetch(`https://api.binance.com/api/v3/klines?symbol=${currentSymbol}&interval=${currentTimeframe}&limit=100`),
+            fetch(`https://api.binance.com/api/v3/depth?symbol=${currentSymbol}&limit=100`)
+          ]);
+
+          if (kRes2.ok && dRes2.ok) {
+            klines = await kRes2.json();
+            depth = await dRes2.json();
+            liveDataSource = 'Binance Live (Spot)';
+          }
+        } catch (err) {
+          // Fallback catch
+        }
+      }
+
+      // Strategy 3: Generate realistic real-time simulated tick data if network/CORS blocks Binance REST API
+      if (!klines) {
+        liveDataSource = 'Simulated Feed (Fallback)';
+        const simResult = generateSimulatedMarketData(currentSymbol);
+        klines = simResult.klines;
+        depth = simResult.depth;
+      }
+
+      // Update Data Source Indicator
+      const dsBadge = document.getElementById('badge-data-source');
+      const dsLabel = document.getElementById('label-data-source');
+      dsLabel.innerText = liveDataSource;
+      if (liveDataSource.includes('Live')) {
+        dsBadge.className = 'flex items-center space-x-1.5 px-2.5 py-1 rounded-full border bg-emerald-500/10 border-emerald-500/30 text-emerald-400 text-xs font-mono';
+      } else {
+        dsBadge.className = 'flex items-center space-x-1.5 px-2.5 py-1 rounded-full border bg-amber-500/10 border-amber-500/30 text-amber-400 text-xs font-mono';
+      }
+
+      processKlineData(klines);
+      processDeepPerpetualDepth(depth);
+      recalculateDivergenceAndSignals();
+      calculatePositionTargets();
+      
+      if (isAgentAutoTrading) {
+        checkAutoAgentExecution();
+      }
+    }
+
+    // Backup Market Generator for CORS / Sandboxed environments
+    function generateSimulatedMarketData(symbol) {
+      const assetObj = assetsList.find(a => a.symbol === symbol) || { basePrice: 100 };
+      let lastPrice = marketData.price > 0 ? marketData.price : assetObj.basePrice;
+      
+      const now = Date.now();
+      const intervalMs = currentTimeframe === '1m' ? 60000 : currentTimeframe === '5m' ? 300000 : 900000;
+      const klines = [];
+
+      for (let i = 99; i >= 0; i--) {
+        const t = now - (i * intervalMs);
+        const change = (Math.random() - 0.49) * (lastPrice * 0.004);
+        const open = lastPrice;
+        const close = open + change;
+        const high = Math.max(open, close) + Math.abs(Math.random() * lastPrice * 0.002);
+        const low = Math.min(open, close) - Math.abs(Math.random() * lastPrice * 0.002);
+        const vol = Math.random() * 50 + 10;
+        klines.push([t, open.toFixed(4), high.toFixed(4), low.toFixed(4), close.toFixed(4), vol.toFixed(2)]);
+        lastPrice = close;
+      }
+
+      const bids = [];
+      const asks = [];
+      for (let i = 1; i <= 20; i++) {
+        bids.push([(lastPrice * (1 - i * 0.001)).toFixed(2), (Math.random() * 15 + 2).toFixed(2)]);
+        asks.push([(lastPrice * (1 + i * 0.001)).toFixed(2), (Math.random() * 15 + 2).toFixed(2)]);
+      }
+
+      return { klines, depth: { bids, asks } };
+    }
+
+    function processKlineData(klines) {
+      const closes = klines.map(k => parseFloat(k[4]));
+      const highs = klines.map(k => parseFloat(k[2]));
+      const lows = klines.map(k => parseFloat(k[3]));
+      const timestamps = klines.map(k => k[0]);
+
+      marketData.price = closes[closes.length - 1];
+      marketData.priceChange24h = ((marketData.price - closes[0]) / closes[0]) * 100;
+
+      if (!document.getElementById('input-entry-price').value) {
+        document.getElementById('input-entry-price').value = marketData.price;
+      }
+
+      const rsiSeries = calculateRSI(closes, 14);
+      marketData.rsi = rsiSeries[rsiSeries.length - 1] || 50;
+
+      const macdObj = calculateMACD(closes);
+      marketData.macd = macdObj.macd[macdObj.macd.length - 1];
+      marketData.macdSignal = macdObj.signal[macdObj.signal.length - 1];
+
+      // Detect Divergence over recent candles
+      detectDivergence(closes, rsiSeries);
+
+      // ATR calculation
+      let trSum = 0;
+      for (let i = 1; i < Math.min(15, closes.length); i++) {
+        const tr = Math.max(
+          highs[i] - lows[i],
+          Math.abs(highs[i] - closes[i - 1]),
+          Math.abs(lows[i] - closes[i - 1])
+        );
+        trSum += tr;
+      }
+      marketData.atr = trSum / 14;
+
+      const ema20 = calculateEMA(closes, 20);
+      const ema50 = calculateEMA(closes, 50);
+
+      updateChart(timestamps, closes, ema20, ema50);
+    }
+
+    function detectDivergence(closes, rsiSeries) {
+      marketData.divergence = 'NONE';
+      const len = closes.length;
+      if (len < 20) return;
+
+      const p1 = closes[len - 1], p3 = closes[len - 10];
+      const r1 = rsiSeries[len - 1], r3 = rsiSeries[len - 10];
+
+      if (p1 < p3 && r1 > r3 && r1 < 45) {
+        marketData.divergence = 'BULLISH';
+      } else if (p1 > p3 && r1 < r3 && r1 > 55) {
+        marketData.divergence = 'BEARISH';
+      }
+    }
+
+    function processDeepPerpetualDepth(depth) {
+      if (!depth || !depth.bids || !depth.asks) return;
+
+      const bids = depth.bids.map(b => [parseFloat(b[0]), parseFloat(b[1])]);
+      const asks = depth.asks.map(a => [parseFloat(a[0]), parseFloat(a[1])]);
+
+      const totalBidVolUSD = bids.reduce((acc, b) => acc + (b[0] * b[1]), 0);
+      const totalAskVolUSD = asks.reduce((acc, a) => acc + (a[0] * a[1]), 0);
+
+      marketData.bidVolM = totalBidVolUSD / 1000000;
+      marketData.askVolM = totalAskVolUSD / 1000000;
+
+      const totalDepthUSD = totalBidVolUSD + totalAskVolUSD;
+      marketData.imbalance = totalDepthUSD > 0 ? (totalBidVolUSD / totalDepthUSD) * 100 : 50;
+
+      let bucketSize = 100;
+      if (marketData.price > 20000) bucketSize = 1000;
+      else if (marketData.price > 1000) bucketSize = 100;
+      else if (marketData.price > 10) bucketSize = 1;
+      else bucketSize = 0.1;
+
+      const sellBucketMap = {};
+      asks.forEach(([price, qty]) => {
+        const bucketPrice = Math.ceil(price / bucketSize) * bucketSize;
+        sellBucketMap[bucketPrice] = (sellBucketMap[bucketPrice] || 0) + (price * qty);
+      });
+
+      const buyBucketMap = {};
+      bids.forEach(([price, qty]) => {
+        const bucketPrice = Math.floor(price / bucketSize) * bucketSize;
+        buyBucketMap[bucketPrice] = (buyBucketMap[bucketPrice] || 0) + (price * qty);
+      });
+
+      marketData.sellClusters = Object.entries(sellBucketMap)
+        .map(([price, usd]) => ({ price: parseFloat(price), usdM: usd / 1000000 }))
+        .sort((a, b) => a.price - b.price).slice(0, 5);
+
+      marketData.buyClusters = Object.entries(buyBucketMap)
+        .map(([price, usd]) => ({ price: parseFloat(price), usdM: usd / 1000000 }))
+        .sort((a, b) => b.price - a.price).slice(0, 5);
+
+      renderOrderBookClusters();
+    }
+
+    function renderOrderBookClusters() {
+      const sellContainer = document.getElementById('container-sell-clusters');
+      const buyContainer = document.getElementById('container-buy-clusters');
+
+      sellContainer.innerHTML = marketData.sellClusters.map(c => `
+        <div class="flex items-center justify-between p-1.5 rounded bg-rose-500/10 border border-rose-500/20">
+          <span class="text-white font-bold">$${c.price.toLocaleString()}</span>
+          <span class="text-rose-400 font-bold">$${c.usdM.toFixed(2)}M USD</span>
+        </div>
+      `).reverse().join('');
+
+      buyContainer.innerHTML = marketData.buyClusters.map(c => `
+        <div class="flex items-center justify-between p-1.5 rounded bg-emerald-500/10 border border-emerald-500/20">
+          <span class="text-white font-bold">$${c.price.toLocaleString()}</span>
+          <span class="text-emerald-400 font-bold">$${c.usdM.toFixed(2)}M USD</span>
+        </div>
+      `).join('');
+
+      document.getElementById('label-book-current-price').innerText = `$${marketData.price.toLocaleString()}`;
+    }
+
+    function recalculateDivergenceAndSignals() {
+      let scores = [];
+
+      if (marketData.divergence === 'BULLISH') scores.push(1.0);
+      else if (marketData.divergence === 'BEARISH') scores.push(-1.0);
+
+      if (marketData.rsi < 30) scores.push(0.8);
+      else if (marketData.rsi > 70) scores.push(-0.8);
+      else scores.push(0.0);
+
+      if (marketData.macd > marketData.macdSignal) scores.push(0.6);
+      else scores.push(-0.6);
+
+      if (marketData.imbalance > 55) scores.push(0.7);
+      else if (marketData.imbalance < 45) scores.push(-0.7);
+      else scores.push(0.0);
+
+      const avgScore = scores.reduce((a, b) => a + b, 0) / (scores.length || 1);
+      marketData.score = parseFloat(avgScore.toFixed(2));
+
+      if (avgScore >= 0.35) marketData.signal = 'BUY';
+      else if (avgScore <= -0.35) marketData.signal = 'SELL';
+      else marketData.signal = 'NEUTRAL / HOLD';
+
+      marketData.bullProb = Math.min(95, Math.max(5, Math.round(((avgScore + 1) / 2) * 100)));
+      marketData.bearProb = 100 - marketData.bullProb;
+
+      let q = 50;
+      if (marketData.divergence !== 'NONE') q += 30;
+      if (marketData.imbalance > 60 || marketData.imbalance < 40) q += 15;
+      if (marketData.rsi < 25 || marketData.rsi > 75) q += 10;
+      marketData.qualityScore = Math.min(99, Math.max(10, q));
+
+      updateUI();
+    }
+
+    function calculatePositionTargets() {
+      const entryPrice = parseFloat(document.getElementById('input-entry-price').value) || marketData.price;
+      
+      // Enforce 10x Max Leverage Rule
+      let leverageInput = parseFloat(document.getElementById('input-leverage').value) || 10;
+      if (leverageInput > 10) {
+        leverageInput = 10;
+        document.getElementById('input-leverage').value = 10;
+      }
+
+      // Enforce 5% Max Risk Rule
+      let riskPctInput = parseFloat(document.getElementById('input-risk-pct').value) || 2.0;
+      if (riskPctInput > 5.0) {
+        riskPctInput = 5.0;
+        document.getElementById('input-risk-pct').value = 5.0;
+      }
+
+      const isLong = userPosition.type === 'LONG';
+      const atr = marketData.atr || (entryPrice * 0.015);
+
+      let sl, tp1, tp2;
+      const nearestResWall = marketData.sellClusters[0]?.price || (entryPrice + atr * 2);
+      const nearestSuppWall = marketData.buyClusters[0]?.price || (entryPrice - atr * 2);
+
+      if (isLong) {
+        sl = nearestSuppWall < entryPrice ? nearestSuppWall * 0.998 : entryPrice - (atr * 1.5);
+        const riskDist = entryPrice - sl;
+        tp1 = Math.min(nearestResWall * 0.998, entryPrice + (riskDist * 1.2));
+        tp2 = entryPrice + (riskDist * 2.0);
+      } else {
+        sl = nearestResWall > entryPrice ? nearestResWall * 1.002 : entryPrice + (atr * 1.5);
+        const riskDist = sl - entryPrice;
+        tp1 = Math.max(nearestSuppWall * 1.002, entryPrice - (riskDist * 1.2));
+        tp2 = entryPrice - (riskDist * 2.0);
+      }
+
+      // 5% Max Allocation Sizing
+      const balanceToUse = useSimulatedTrading ? virtualBalance : 1000;
+      const maxAllocatedMargin = balanceToUse * 0.05; // 5% Hard Cap
+      const recPositionUSD = maxAllocatedMargin * leverageInput;
+      const recCoinQty = recPositionUSD / entryPrice;
+
+      document.getElementById('target-tp1').innerText = `$${tp1.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+      document.getElementById('target-tp2').innerText = `$${tp2.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+      document.getElementById('target-sl').innerText = `$${sl.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+      document.getElementById('target-pos-size').innerText = `${recCoinQty.toFixed(4)} ${currentAsset}`;
+      document.getElementById('target-pos-usd').innerText = `($${maxAllocatedMargin.toFixed(2)} Margin @ ${leverageInput}x)`;
+
+      const tp1Diff = Math.abs((tp1 - entryPrice) / entryPrice * 100);
+      const tp2Diff = Math.abs((tp2 - entryPrice) / entryPrice * 100);
+      const slDiff = Math.abs((sl - entryPrice) / entryPrice * 100);
+
+      document.getElementById('target-tp1-pct').innerText = `+${tp1Diff.toFixed(2)}% (+${(tp1Diff * leverageInput).toFixed(1)}% ROE)`;
+      document.getElementById('target-tp2-pct').innerText = `+${tp2Diff.toFixed(2)}% (+${(tp2Diff * leverageInput).toFixed(1)}% ROE)`;
+      document.getElementById('target-sl-pct').innerText = `-${slDiff.toFixed(2)}% (-${(slDiff * leverageInput).toFixed(1)}% ROE)`;
+    }
+
+    function confirmAndExecuteOrder(side) {
+      const qtyText = document.getElementById('target-pos-size').innerText.split(' ')[0];
+      const quantity = parseFloat(qtyText);
+
+      if (!quantity || quantity <= 0) {
+        showToast("Invalid Sizing", "Calculated order quantity must be greater than zero.", "warning");
+        return;
+      }
+
+      const modeText = useSimulatedTrading ? "Virtual Paper Wallet" : "Live Binance API";
+      
+      showToastConfirm(
+        `Execute ${side} Order`,
+        `Confirm sending ${modeText} ${side} order for ${quantity.toFixed(4)} ${currentAsset}?`,
+        () => {
+          if (useSimulatedTrading) {
+            executePaperTrade(side, quantity);
+          } else {
+            executeBinanceOrder(side, quantity);
+          }
+        }
+      );
+    }
+
+    function executePaperTrade(side, quantity) {
+      const marginReq = (quantity * marketData.price) / (parseFloat(document.getElementById('input-leverage').value) || 10);
+      
+      if (marginReq > virtualBalance) {
+        showToast("Insufficient Balance", "Your paper balance cannot cover this position's margin.", "warning");
+        return;
+      }
+
+      showToast("Paper Order Executed", `Simulated ${side} ${quantity.toFixed(4)} ${currentAsset} @ $${marketData.price.toFixed(2)}`, "success");
+    }
+
+    async function executeBinanceOrder(side, quantity) {
+      if (!binanceApiKey || !binanceApiSecret) {
+        showToast("API Missing", "Please connect your Binance API keys in the header settings.", "warning");
+        return;
+      }
+
+      try {
+        const timestamp = Date.now();
+        const queryString = `symbol=${currentSymbol}&side=${side}&type=MARKET&quantity=${quantity}&timestamp=${timestamp}`;
+        const signature = await hmacSha256(binanceApiSecret, queryString);
+
+        const res = await fetch(`https://fapi.binance.com/fapi/v1/order?${queryString}&signature=${signature}`, {
+          method: 'POST',
+          headers: { 'X-MBX-APIKEY': binanceApiKey }
+        });
+
+        const result = await res.json();
+        if (res.ok) {
+          showToast("Binance Order Executed!", `Order ID: ${result.orderId}`, "success");
+          fetchAccountBalance();
+        } else {
+          showToast("Binance Order Failed", result.msg || "API Execution error", "warning");
+        }
+      } catch (err) {
+        showToast("Execution Error", err.message, "warning");
+      }
+    }
+
+    let lastAgentTradeTime = 0;
+    function checkAutoAgentExecution() {
+      if (Date.now() - lastAgentTradeTime < 180000) return; // 3 min cooldown
+
+      if (marketData.qualityScore >= 75) {
+        if (marketData.signal === 'BUY' && marketData.divergence === 'BULLISH') {
+          lastAgentTradeTime = Date.now();
+          const qtyText = document.getElementById('target-pos-size').innerText.split(' ')[0];
+          const qty = parseFloat(qtyText);
+          if (useSimulatedTrading) executePaperTrade('BUY', qty);
+          else executeBinanceOrder('BUY', qty);
+        } else if (marketData.signal === 'SELL' && marketData.divergence === 'BEARISH') {
+          lastAgentTradeTime = Date.now();
+          const qtyText = document.getElementById('target-pos-size').innerText.split(' ')[0];
+          const qty = parseFloat(qtyText);
+          if (useSimulatedTrading) executePaperTrade('SELL', qty);
+          else executeBinanceOrder('SELL', qty);
+        }
+      }
+    }
+
+    function updateUI() {
+      document.getElementById('metric-price').innerText = `$${marketData.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 4 })}`;
+      
+      const changeElem = document.getElementById('metric-price-change');
+      const isPos = marketData.priceChange24h >= 0;
+      changeElem.className = `text-xs font-bold mt-1 flex items-center space-x-1 ${isPos ? 'text-emerald-400' : 'text-rose-400'}`;
+      changeElem.innerHTML = `<i class="fa-solid fa-${isPos ? 'arrow-trend-up' : 'arrow-trend-down'}"></i> <span>${isPos ? '+' : ''}${marketData.priceChange24h.toFixed(2)}% (24h)</span>`;
+
+      const actionElem = document.getElementById('metric-signal-action');
+      const divBadge = document.getElementById('metric-divergence-badge');
+      document.getElementById('metric-signal-score').innerText = `Score: ${marketData.score}`;
+
+      actionElem.innerText = marketData.signal;
+      if (marketData.divergence === 'BULLISH') {
+        divBadge.innerText = '★ BULLISH DIVERGENCE SCANNED';
+        divBadge.className = 'text-xs font-black text-emerald-400 mt-1 animate-pulse';
+      } else if (marketData.divergence === 'BEARISH') {
+        divBadge.innerText = '★ BEARISH DIVERGENCE SCANNED';
+        divBadge.className = 'text-xs font-black text-rose-400 mt-1 animate-pulse';
+      } else {
+        divBadge.innerText = 'No Divergence Detected';
+        divBadge.className = 'text-xs font-bold text-slate-500 mt-1';
+      }
+
+      document.getElementById('score-quality-number').innerText = `${marketData.qualityScore}/100`;
+
+      // Advice Banner
+      const adviceBadge = document.getElementById('badge-novice-action');
+      const adviceHeadline = document.getElementById('text-novice-headline');
+      const adviceDetail = document.getElementById('text-novice-detail');
+
+      if (marketData.signal === 'BUY' && marketData.qualityScore > 65) {
+        adviceBadge.innerText = 'IDEAL BUY ZONE';
+        adviceBadge.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40';
+        adviceHeadline.innerText = `High Probability Long Setup on ${currentAsset}`;
+        adviceDetail.innerText = `RSI/MACD alignment combined with ${marketData.imbalance.toFixed(1)}% buy depth support. Consider entry with stop-loss below nearest buy wall.`;
+      } else if (marketData.signal === 'SELL' && marketData.qualityScore > 65) {
+        adviceBadge.innerText = 'STRONG REJECTION ZONE';
+        adviceBadge.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/40';
+        adviceHeadline.innerText = `High Probability Short / Exit Zone on ${currentAsset}`;
+        adviceDetail.innerText = `Bearish pressure and overhead sell walls detected. Protect capital and consider locking in profits.`;
+      } else {
+        adviceBadge.innerText = 'WAIT & WATCH';
+        adviceBadge.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700';
+        adviceHeadline.innerText = `Market Consolidating — No High Conviction Trigger`;
+        adviceDetail.innerText = `Wait for clearer order book wall confirmation or RSI divergence trigger before opening a new position.`;
+      }
+
+      document.getElementById('metric-imbalance-pct').innerText = `${marketData.imbalance.toFixed(1)}% Buy Depth`;
+      document.getElementById('imbalance-buy-bar').style.width = `${marketData.imbalance}%`;
+      document.getElementById('depth-bid-vol').innerText = `Bids: $${marketData.bidVolM.toFixed(1)}M`;
+      document.getElementById('depth-ask-vol').innerText = `Asks: $${marketData.askVolM.toFixed(1)}M`;
+
+      document.getElementById('rsi-badge').innerText = marketData.rsi.toFixed(1);
+      document.getElementById('macd-badge').innerText = marketData.macd.toFixed(2);
+      document.getElementById('chart-title').innerText = `${currentAsset}/USDT Chart (${currentTimeframe})`;
+    }
+
+    function initChart() {
+      const ctx = document.getElementById('priceChart').getContext('2d');
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: [],
+          datasets: [
+            { label: 'Price', data: [], borderColor: '#3B82F6', borderWidth: 2, tension: 0.1, pointRadius: 0 },
+            { label: 'EMA 20', data: [], borderColor: '#F59E0B', borderWidth: 1.5, tension: 0.1, pointRadius: 0 },
+            { label: 'EMA 50', data: [], borderColor: '#6366F1', borderWidth: 1.5, tension: 0.1, pointRadius: 0 }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { display: false },
+            y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94A3B8', font: { family: 'monospace' } } }
+          }
+        }
+      });
+    }
+
+    function updateChart(timestamps, prices, ema20, ema50) {
+      if (!chartInstance) return;
+      chartInstance.data.labels = timestamps;
+      chartInstance.data.datasets[0].data = prices;
+      chartInstance.data.datasets[1].data = ema20;
+      chartInstance.data.datasets[2].data = ema50;
+      chartInstance.update();
+    }
+
+    function calculateRSI(prices, period = 14) {
+      let rsi = new Array(prices.length).fill(null);
+      if (prices.length <= period) return rsi;
+
+      let gains = 0, losses = 0;
+      for (let i = 1; i <= period; i++) {
+        const diff = prices[i] - prices[i - 1];
+        if (diff >= 0) gains += diff;
+        else losses -= diff;
+      }
+
+      let avgGain = gains / period, avgLoss = losses / period;
+      rsi[period] = avgLoss === 0 ? 100 : 100 - (100 / (1 + (avgGain / avgLoss)));
+
+      for (let i = period + 1; i < prices.length; i++) {
+        const diff = prices[i] - prices[i - 1];
+        const gain = diff >= 0 ? diff : 0;
+        const loss = diff < 0 ? -diff : 0;
+        avgGain = (avgGain * (period - 1) + gain) / period;
+        avgLoss = (avgLoss * (period - 1) + loss) / period;
+        rsi[i] = avgLoss === 0 ? 100 : 100 - (100 / (1 + (avgGain / avgLoss)));
+      }
+      return rsi;
+    }
+
+    function calculateEMA(prices, period) {
+      const k = 2 / (period + 1);
+      let ema = [prices[0]];
+      for (let i = 1; i < prices.length; i++) {
+        ema.push(prices[i] * k + ema[i - 1] * (1 - k));
+      }
+      return ema;
+    }
+
+    function calculateMACD(prices) {
+      const ema12 = calculateEMA(prices, 12);
+      const ema26 = calculateEMA(prices, 26);
+      let macdLine = [];
+      for (let i = 0; i < prices.length; i++) {
+        macdLine.push(ema12[i] - ema26[i]);
+      }
+      const signalLine = calculateEMA(macdLine, 9);
+      return { macd: macdLine, signal: signalLine };
+    }
+
+    function saveApiSettings() {
+      const k = document.getElementById('input-binance-key').value.trim();
+      const s = document.getElementById('input-binance-secret').value.trim();
+
+      if (!useSimulatedTrading && (!k || !s)) {
+        showToast("Missing Keys", "Please enter both Binance API Key and Secret.", "warning");
+        return;
+      }
+
+      binanceApiKey = k;
+      binanceApiSecret = s;
+      localStorage.setItem('BINANCE_API_KEY', k);
+      localStorage.setItem('BINANCE_API_SECRET', s);
+
+      updateApiStatusUI();
+      document.getElementById('modal-api-setup').classList.add('hidden');
+      showToast("Settings Saved", "API and Trading settings updated.", "success");
+    }
+
+    function clearApiSettings() {
+      binanceApiKey = '';
+      binanceApiSecret = '';
+      localStorage.removeItem('BINANCE_API_KEY');
+      localStorage.removeItem('BINANCE_API_SECRET');
+      document.getElementById('input-binance-key').value = '';
+      document.getElementById('input-binance-secret').value = '';
+      updateApiStatusUI();
+      document.getElementById('modal-api-setup').classList.add('hidden');
+      showToast("Settings Cleared", "API Keys removed.", "info");
+    }
+
+    async function hmacSha256(secret, message) {
+      const enc = new TextEncoder();
+      const key = await crypto.subtle.importKey(
+        'raw', enc.encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
+      );
+      const signature = await crypto.subtle.sign('HMAC', key, enc.encode(message));
+      return Array.from(new Uint8Array(signature)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function fetchAccountBalance() {
+      if (!binanceApiKey || !binanceApiSecret) return;
+
+      try {
+        const timestamp = Date.now();
+        const queryString = `timestamp=${timestamp}`;
+        const signature = await hmacSha256(binanceApiSecret, queryString);
+
+        const res = await fetch(`https://fapi.binance.com/fapi/v2/balance?${queryString}&signature=${signature}`, {
+          headers: { 'X-MBX-APIKEY': binanceApiKey }
+        });
+
+        if (!res.ok) throw new Error("API Auth Failed");
+
+        const data = await res.json();
+        const usdtAsset = data.find(a => a.asset === 'USDT');
+
+        if (usdtAsset) {
+          const bal = parseFloat(usdtAsset.balance);
+          document.getElementById('metric-account-balance').innerText = `$${bal.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} USDT`;
+          document.getElementById('metric-account-status').innerText = `Available: $${parseFloat(usdtAsset.withdrawAvailable).toFixed(2)}`;
+        }
+      } catch (err) {
+        document.getElementById('metric-account-status').innerText = 'API Error - Check Keys / IP Restrictions';
+      }
+    }
+
+    async function handleAddCustomCoin() {
+      const symbolInput = document.getElementById('input-coin-symbol').value.trim().toUpperCase();
+      const errElem = document.getElementById('add-coin-error');
+
+      if (!symbolInput) return;
+      let formattedSymbol = symbolInput.endsWith('USDT') ? symbolInput : `${symbolInput}USDT`;
+      let labelInput = symbolInput.replace('USDT', '');
+
+      if (assetsList.some(a => a.symbol === formattedSymbol)) {
+        errElem.innerText = `${labelInput} is already in your pair list.`;
+        errElem.classList.remove('hidden');
+        return;
+      }
+
+      assetsList.push({ symbol: formattedSymbol, label: labelInput, isCustom: true, basePrice: 10 });
+      saveAssetsToStorage();
+      currentAsset = labelInput;
+      currentSymbol = formattedSymbol;
+
+      renderAssetButtons();
+      fetchLiveData();
+
+      document.getElementById('modal-add-coin').classList.add('hidden');
+      showToast("Pair Added", `Added ${labelInput}/USDT to pair bar.`, "success");
+    }
+
+    // In-App Non-Blocking Toast Notification System
+    function showToast(title, message, type = 'info') {
+      const modal = document.getElementById('modal-dialog-toast');
+      const iconBox = document.getElementById('toast-icon-box');
+      const icon = document.getElementById('toast-icon');
+      const tTitle = document.getElementById('toast-title');
+      const tMsg = document.getElementById('toast-message');
+      const btnCancel = document.getElementById('btn-toast-cancel');
+      const btnOk = document.getElementById('btn-toast-ok');
+
+      tTitle.innerText = title;
+      tMsg.innerText = message;
+      btnCancel.classList.add('hidden');
+
+      if (type === 'success') {
+        iconBox.className = 'w-12 h-12 rounded-full mx-auto flex items-center justify-center mb-3 text-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
+        icon.className = 'fa-solid fa-check';
+      } else if (type === 'warning') {
+        iconBox.className = 'w-12 h-12 rounded-full mx-auto flex items-center justify-center mb-3 text-xl bg-amber-500/20 text-amber-400 border border-amber-500/30';
+        icon.className = 'fa-solid fa-triangle-exclamation';
+      } else {
+        iconBox.className = 'w-12 h-12 rounded-full mx-auto flex items-center justify-center mb-3 text-xl bg-blue-500/20 text-blue-400 border border-blue-500/30';
+        icon.className = 'fa-solid fa-info';
+      }
+
+      modal.classList.remove('hidden');
+
+      btnOk.onclick = () => {
+        modal.classList.add('hidden');
+      };
+    }
+
+    function showToastConfirm(title, message, onConfirm) {
+      const modal = document.getElementById('modal-dialog-toast');
+      const iconBox = document.getElementById('toast-icon-box');
+      const icon = document.getElementById('toast-icon');
+      const tTitle = document.getElementById('toast-title');
+      const tMsg = document.getElementById('toast-message');
+      const btnCancel = document.getElementById('btn-toast-cancel');
+      const btnOk = document.getElementById('btn-toast-ok');
+
+      tTitle.innerText = title;
+      tMsg.innerText = message;
+
+      iconBox.className = 'w-12 h-12 rounded-full mx-auto flex items-center justify-center mb-3 text-xl bg-blue-500/20 text-blue-400 border border-blue-500/30';
+      icon.className = 'fa-solid fa-question';
+
+      btnCancel.classList.remove('hidden');
+      modal.classList.remove('hidden');
+
+      btnOk.onclick = () => {
+        modal.classList.add('hidden');
+        if (onConfirm) onConfirm();
+      };
+
+      btnCancel.onclick = () => {
+        modal.classList.add('hidden');
+      };
+    }
+
+    function exportAppHTML() {
+      const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+
+</body></html>
